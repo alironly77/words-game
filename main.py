@@ -1,11 +1,13 @@
 import random
 
 
+
 Name = input("What is your name?: ")
 print(f"Hi {Name} , Welcome to guess the word")
 print("You have 8 chances to guess the name we want. In these 8 chances, you are only allowed to enter words. If you want to guess the full name, you lose if it is wrong.")
 NamesComputer = ["ali", "reza", "mohammad", "amir", "sina", "ramin", "armin", "saman", "abbas", "arash", "zahra", "fatemeh", "sara", "atefeh", "asal",
                  "sadaf", "roya", "nazanin"]
+spaces = ['_']* len(NamesComputer)
 Computer = random.choice(NamesComputer)
 UserChance = 0
 Guess = ''
